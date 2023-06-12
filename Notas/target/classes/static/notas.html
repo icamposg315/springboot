@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de notas</title>
+</head>
+<body>
+<nav>
+    <a style="display: none" href="#editar">Editar</a>
+    <a style="display: none" href="#editar">Asignar</a>
+    <a style="display: none" href="#editar">Eliminar</a>
+    <a href="#editar">Consultar</a>
+</nav>
+<div id="#editar">
+    <input id="idEdit" type="number" placeholder="Introduce el ID">
+    <input class="txtEdit" type="text" placeholder="Introduzca para editar el nombre del alumno">
+    <input class="txtEdit" type="text" placeholder="Introduzca para editar los apellidos del alumno">
+    <input class="txtEdit" type="text" placeholder="Introduzca para editar el periodo cursado">
+    <input class="txtEdit" type="text" placeholder="Introduzca para editar el tema evaluado">
+    <input class="txtEdit" type="text" placeholder="Introduzca para editar la nota">
+    <button onclick="editar()">Editar</button>
+</div>
+<div id="#asignar">
+    <input id="idCreate" type="number" placeholder="Introduce el ID">
+    <input class="txtEdit" type="text" placeholder="Introduzca el nombre del alumno">
+    <input class="txtEdit" type="text" placeholder="Introduzca los apellidos del alumno">
+    <input class="txtEdit" type="text" placeholder="Introduzca el periodo cursado">
+    <input class="txtEdit" type="text" placeholder="Introduzca el tema evaluado">
+    <input class="txtEdit" type="text" placeholder="Introduzca la nota">
+    <button onclick="crear()">Guardar</button>
+</div>
+<div id="#eliminar">
+    <input id="idDelete" type="number" placeholder="Introduzca el ID del alumno que quiere eliminar>">
+    <button onclick="eliminar()">Eliminar</button>
+</div>
+<div id="#consultar">
+    <input id="idQuery" type="number" placeholder="Introduzca el ID del alumno que quiere consultar>">
+    <button onclick="cargar()">Ver más</button>
+</div>
+
+</body>
+</html>
